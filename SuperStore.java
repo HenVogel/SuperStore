@@ -16,6 +16,7 @@ class Product {
     private final int productId;
     public static int nextId = 1;
 
+    // Sets the variables name, price, and productId
     public Product(String name, Double price) {
         this.name = name;
         this.price = price;
@@ -58,6 +59,7 @@ class Electronics extends Product {
     private final String brand;
     private final boolean hasBattery;
 
+    // Sets the variables name, price, brand, and hasBattery
     public Electronics(String name, double price, String brand, boolean hasBattery) {
         super(name, price);
         this.brand = brand;
@@ -85,6 +87,7 @@ class Grocery extends Product {
     private final Double weight;
     private final boolean isPerishable;
 
+    // Sets the variables name, price, weight, and isPerishable
     public Grocery(String name, double price, double weight, boolean isPerishable) {
         super(name, price);
         this.weight = weight;
@@ -105,6 +108,7 @@ class Grocery extends Product {
 final class Toy extends Product {
     private final int minAge;
 
+    // Sets the variables name, price, and minAge
     public Toy(String name, double price, int minAge) {
         super(name, price);
         this.minAge = minAge;
@@ -130,7 +134,6 @@ class Coupon {
     }
 }
 
-
 // TODO: Define class SuperStoreTest with a main method
 // - Create at least one instance of each subclass
 // - Store them in a Product[] array
@@ -139,6 +142,7 @@ class Coupon {
 
 public class SuperStoreTest {
     public static void main(String[] args) {
+        // One instance of each of the subclasses
         Product p1 = new Electronics("Phone", 99999.99, "Tech", true);
         Product p2 = new Electronics("Computer", 99999.99, "Tech", true);
         Product p3 = new Grocery("Pizza", 9.99, 4.5, true);
